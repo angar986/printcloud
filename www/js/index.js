@@ -3,6 +3,7 @@
 		cordova.plugins.printer.isAvailable(
 			function (isAvailable) {
 				alert(isAvailable ? 'Service is available' : 'Service NOT available');
+				alert('The following print apps are installed on your device: ' + installedAppIds.join(', '));
 			}
 		);
     }
