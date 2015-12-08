@@ -1,4 +1,4 @@
-    //onDeviceReady();
+    onDeviceReady();
     function onDeviceReady(){
 		window.plugins.printer.isAvailable(
 			function (isAvailable) {
