@@ -1,10 +1,11 @@
     onDeviceReady();
     function onDeviceReady(){
-		window.plugin.printer.isServiceAvailable(
+		cordova.plugins.printer.isAvailable(
 			function (isAvailable) {
 				alert(isAvailable ? 'Service is available' : 'Service NOT available');
 			}
 		);
+		window.print();
     }
 
    
