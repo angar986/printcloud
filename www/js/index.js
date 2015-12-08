@@ -1,4 +1,4 @@
-    onDeviceReady();
+    //onDeviceReady();
     function onDeviceReady(){
 		cordova.plugins.printer.isAvailable(
 			function (isAvailable) {
