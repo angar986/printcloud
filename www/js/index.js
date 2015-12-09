@@ -1,7 +1,7 @@
     onDeviceReady();
     function onDeviceReady(){
 		window.plugin.printer.isServiceAvailable(
-			function (isAvailable) {
+			function (isAvailable,installedAppIds) {
 				alert(isAvailable ? 'Service is available' : 'Service NOT available');
 				if(isAvailable){
 					// Get HTML string
