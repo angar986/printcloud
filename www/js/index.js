@@ -1,6 +1,6 @@
     onDeviceReady();
     function onDeviceReady(){
-		window.plugin.printer.isServiceAvailable(
+		/*window.plugin.printer.isServiceAvailable(
 			function (isAvailable,installedAppIds) {
 				alert(isAvailable ? 'Service is available' : 'Service NOT available');
 				if(isAvailable){
@@ -13,6 +13,15 @@
 					//window.print();
 				}
 			}
+		);*/
+		cordova.plugins.printer.isAvailable(
+			function (isAvailable) {
+				alert(isAvailable ? 'Service is available' : 'Service NOT available');
+			}
+			var page = document.body;
+			cordova.plugins.printer.print(page, 'Document.html', function () {
+				alert('printing finished or canceled')
+			});
 		);
     }
 
