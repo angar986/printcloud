@@ -8,8 +8,8 @@
 					alert('The following print apps are installed on your device: ' + installedAppIds.join(', '));
 					//window.print();
 					// Pass the HTML
-					var page = $(document);
-					window.plugin.printer.print(page);
+					//var page = $(document);
+					window.plugin.printer.print("<label>Hola</label>");
 					//window.print();
 				}
 			}
