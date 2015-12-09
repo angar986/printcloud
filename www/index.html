@@ -22,7 +22,7 @@
 </html>
 <script>
 function impresion(){
-	cordova.plugins.printer.isAvailable(
+	/*cordova.plugins.printer.isAvailable(
 			function (isAvailable) {
 				alert(isAvailable ? 'Service is available' : 'Service NOT available');
 				var page = document.getElementById('imprimir').innerHTML;
@@ -31,6 +31,9 @@ function impresion(){
 					alert('documento enviado....');
 				});
 			} 
-		);
+		);*/
+		StarIOAdapter.rawprint("Text to print", "BT:", function() {
+			alert("printed");
+		});
 }
 </script>
