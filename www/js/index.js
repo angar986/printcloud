@@ -1,13 +1,13 @@
-    onDeviceReady();
+    //onDeviceReady();
     function onDeviceReady(){
 		window.plugin.printer.isServiceAvailable(
 			function (isAvailable) {
-				alert(isAvailable ? 'Service is available' : 'Service NOT available');
+				//alert(isAvailable ? 'Service is available' : 'Service NOT available');
 				if(isAvailable){
 					// Get HTML string
-					var page = document.body.innerHTML;
-
+					alert('The following print apps are installed on your device: ' + installedAppIds.join(', '));
 					// Pass the HTML
+					var page = document.body.innerHTML;
 					window.plugin.printer.print(page);
 				}
 			}
