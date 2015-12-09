@@ -25,9 +25,10 @@ function impresion(){
 	cordova.plugins.printer.isAvailable(
 			function (isAvailable) {
 				alert(isAvailable ? 'Service is available' : 'Service NOT available');
-				var page = $('#imprimir').html;
+				var page = document.getElementById('impirmir').innerHTML;
+				alert(page);
 				cordova.plugins.printer.print(page, 'Prueba.html', function () {
-					alert('printing finished or canceled')
+					alert('documento enviado....');
 				});
 			} 
 		);
