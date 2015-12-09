@@ -5,6 +5,7 @@
 				//alert(isAvailable ? 'Service is available' : 'Service NOT available');
 				if(isAvailable){
 					// Get HTML string
+					
 					alert('The following print apps are installed on your device: ' + installedAppIds.join(', '));
 					// Pass the HTML
 					var page = document.body.innerHTML;
