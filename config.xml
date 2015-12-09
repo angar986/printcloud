@@ -29,7 +29,7 @@
     <gap:plugin name="org.apache.cordova.media-capture" />
     <gap:plugin name="org.apache.cordova.console" />
     <gap:plugin name="org.apache.cordova.contacts" />
-    <gap:plugin name="org.apache.cordova.device" version='0.2.3'/>
+    <gap:plugin name="org.apache.cordova.device"/>
     <gap:plugin name="org.apache.cordova.device-motion" />
     <gap:plugin name="org.apache.cordova.device-orientation" />
     <gap:plugin name="org.apache.cordova.dialogs" />
@@ -45,7 +45,7 @@
 	<gap:plugin name="cordova-plugin-customurlscheme" source="npm">
 	  <param name="URL_SCHEME" value="nubeposv" />
 	</gap:plugin>
-    <plugin name="de.appplant.cordova.plugin.printer"/>
+    <plugin name="de.appplant.cordova.plugin.printer" spec="0.6.2" version="0.6.2"/>
     <icon src="icon.png" />
     <icon gap:platform="android" gap:qualifier="ldpi" src="www/res/icon/android/icon-36-ldpi.png" />
     <icon gap:platform="android" gap:qualifier="mdpi" src="www/res/icon/android/icon-48-mdpi.png" />
