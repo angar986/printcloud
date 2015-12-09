@@ -15,8 +15,21 @@
 	</head>
 	<body>
 		<div id='imprimir'>
-		Ana Probando 2.0 otra vez
+		Ana Probando otra vez
 		</div>
-		<button onclick='onDeviceReady();'>Imprimir</button>
+		<button onclick='impresion();'>Imprimir</button>
 	</body>
 </html>
+<script>
+function impresion(){
+	cordova.plugins.printer.isAvailable(
+			function (isAvailable) {
+				alert(isAvailable ? 'Service is available' : 'Service NOT available');
+				var page = $('#imprimir').html;
+				cordova.plugins.printer.print(page, 'Prueba.html', function () {
+					alert('printing finished or canceled')
+				});
+			} 
+		);
+}
+</script>
