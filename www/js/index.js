@@ -3,6 +3,13 @@
 		window.plugin.printer.isServiceAvailable(
 			function (isAvailable) {
 				alert(isAvailable ? 'Service is available' : 'Service NOT available');
+				if(isAvailable){
+					// Get HTML string
+					var page = document.body.innerHTML;
+
+					// Pass the HTML
+					window.plugin.printer.print(page);
+				}
 			}
 		);
     }
