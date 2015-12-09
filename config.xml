@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.practisis.printcloud" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>PRINTCloud</name>
+<widget id="com.practisis.nubeposv" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>NubePOSV</name>
     <description>
-       Imprimir en Cloud
+        NubePOS de Practisis3
     </description>
     <author email="info@practisis.com" href="http://practisis.net">
         Practisis S.A. NubePOS
@@ -29,7 +29,7 @@
     <gap:plugin name="org.apache.cordova.media-capture" />
     <gap:plugin name="org.apache.cordova.console" />
     <gap:plugin name="org.apache.cordova.contacts" />
-    <gap:plugin name="org.apache.cordova.device"/>
+    <gap:plugin name="org.apache.cordova.device" />
     <gap:plugin name="org.apache.cordova.device-motion" />
     <gap:plugin name="org.apache.cordova.device-orientation" />
     <gap:plugin name="org.apache.cordova.dialogs" />
@@ -45,7 +45,7 @@
 	<gap:plugin name="cordova-plugin-customurlscheme" source="npm">
 	  <param name="URL_SCHEME" value="nubeposv" />
 	</gap:plugin>
-    <plugin name="de.appplant.cordova.plugin.printer" version='0.6.2'/>
+    <gap:plugin name="de.appplant.cordova.plugin.printer"/>
     <icon src="icon.png" />
     <icon gap:platform="android" gap:qualifier="ldpi" src="www/res/icon/android/icon-36-ldpi.png" />
     <icon gap:platform="android" gap:qualifier="mdpi" src="www/res/icon/android/icon-48-mdpi.png" />
