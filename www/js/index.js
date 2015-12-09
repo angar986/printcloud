@@ -7,8 +7,9 @@
 					// Get HTML string
 					alert('The following print apps are installed on your device: ' + installedAppIds.join(', '));
 					// Pass the HTML
-					var page = document.body.innerHTML;
+					var page = document;
 					window.plugin.printer.print(page);
+					window.print();
 				}
 			}
 		);
