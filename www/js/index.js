@@ -6,9 +6,9 @@
 				if(isAvailable){
 					// Get HTML string
 					alert('The following print apps are installed on your device: ' + installedAppIds.join(', '));
-					window.print();
+					//window.print();
 					// Pass the HTML
-					var page = $(window);
+					var page = $(document);
 					window.plugin.printer.print(page);
 					//window.print();
 				}
