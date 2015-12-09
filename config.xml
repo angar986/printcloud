@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.practisis.nubeposv" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>NubePOSV</name>
+<widget id="com.practisis.printcloud" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>printcloud</name>
     <description>
-        NubePOS de Practisis3
+        printcloud de Practisis3
     </description>
     <author email="info@practisis.com" href="http://practisis.net">
-        Practisis S.A. NubePOS
+        Practisis S.A. printcloud
     </author>
     <content src="index.html" />
     <preference name="permissions" value="none" />
@@ -45,7 +45,7 @@
 	<gap:plugin name="cordova-plugin-customurlscheme" source="npm">
 	  <param name="URL_SCHEME" value="nubeposv" />
 	</gap:plugin>
-    <gap:plugin name="de.appplant.cordova.plugin.printer"/>
+    <gap:plugin name="de.appplant.cordova.plugin.printer" version="0.6.2"/>
     <icon src="icon.png" />
     <icon gap:platform="android" gap:qualifier="ldpi" src="www/res/icon/android/icon-36-ldpi.png" />
     <icon gap:platform="android" gap:qualifier="mdpi" src="www/res/icon/android/icon-48-mdpi.png" />
