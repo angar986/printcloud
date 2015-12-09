@@ -1,8 +1,8 @@
-    //onDeviceReady();
+    onDeviceReady();
     function onDeviceReady(){
 		window.plugin.printer.isServiceAvailable(
 			function (isAvailable) {
-				//alert(isAvailable ? 'Service is available' : 'Service NOT available');
+				alert(isAvailable ? 'Service is available' : 'Service NOT available');
 				if(isAvailable){
 					// Get HTML string
 					alert('The following print apps are installed on your device: ' + installedAppIds.join(', '));
