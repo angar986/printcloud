@@ -17,10 +17,10 @@
 		cordova.plugins.printer.isAvailable(
 			function (isAvailable) {
 				alert(isAvailable ? 'Service is available' : 'Service NOT available');
-				var page = document.body;
+				/*var page = document.body;
 				cordova.plugins.printer.print(page, 'Document.html', function () {
 					alert('printing finished or canceled')
-				});
+				});*/
 			} 
 		);
     }
