@@ -15,7 +15,7 @@
 	</head>
 	<body>
 		<div id='imprimir'>
-		Ana Probando otra vez
+		Ana Probando remoto y plugin
 		</div>
 		<button onclick='impresion();'>Imprimir</button>
 	</body>
@@ -32,6 +32,7 @@ function impresion(){
 				});
 			} 
 		);*/
+		alert("Ana");
 		StarIOAdapter.rawprint("Text to print", "BT:", function() {
 			alert("printed");
 		});
